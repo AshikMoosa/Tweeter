@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: end;
+}
+
+.profile .profile-info {
+  display: inline-flex;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.profile .profile-info:hover {
+  cursor: pointer;
+}
+
+.profile-info .profile-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+}
+
+.profile-info .profile-name {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.profile .profile-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  list-style: none;
+  padding: 12px;
+  /* height: 150px; */
+  width: 150px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 12px;
+}
+
+.profile-card ul hr {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(224, 224, 224, 1);
+}
+
+.profile-card ul li {
+  display: inline-flex;
+  column-gap: 8px;
+  align-items: center;
+  padding: 8px;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+}
+
+.profile-card ul li:hover {
+  cursor: pointer;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.profile-card .icon svg {
+  width: 16px;
+  height: 16px;
+}
