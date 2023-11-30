@@ -7,6 +7,7 @@ navItem.forEach((element) => {
     navList.forEach((listItem) => {
       listItem.removeAttribute("selected");
     });
+
     // setting selected attribute to respective <li> element
     e.target.parentElement.setAttribute("selected", true);
   });

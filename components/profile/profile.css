@@ -4,12 +4,14 @@
   width: fit-content;
   align-items: end;
   font-family: "Noto Sans", sans-serif;
+  user-select: none;
 }
 
 .profile .profile-info {
   display: inline-flex;
   column-gap: 8px;
   align-items: center;
+  transition: display 0.5s;
 }
 
 .profile .profile-info:hover {
@@ -28,9 +30,12 @@
 }
 
 .profile .profile-card {
-  display: none;
-  /* display: flex; */
-  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 4em;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 12px;
+  transition-timing-function: ease;
 }
 
 .profile-card ul {
@@ -39,10 +44,8 @@
   row-gap: 5px;
   list-style: none;
   padding: 12px;
-  margin-bottom: 0;
+  margin: 0;
   width: 150px;
-  border: 1px solid rgba(224, 224, 224, 1);
-  border-radius: 12px;
 }
 
 .profile-card ul hr {
@@ -56,7 +59,6 @@
   column-gap: 8px;
   align-items: center;
   padding: 8px;
-  /* border: 1px solid black; */
   border-radius: 8px;
 }
 

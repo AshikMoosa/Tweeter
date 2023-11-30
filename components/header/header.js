@@ -1,20 +1,35 @@
-console.log("added");
-
-// Inject HTML Pages - navigation, profile
+// Inject HTML Pages & scripts - navigation, profile
 document.addEventListener("DOMContentLoaded", function () {
-  function injectContent(url, containerId) {
+  function injectContent(url, containerId, scriptUrl) {
+    const container = document.getElementById(containerId);
+
+    // Create an iframe
     const iframe = document.createElement("iframe");
     iframe.src = url;
+
+    // Wait for the iframe to load
     iframe.onload = function () {
+      // Extract the content of the <body> element
       const content = iframe.contentDocument.body.innerHTML;
-      document.getElementById(containerId).innerHTML = content;
+
+      // Inject the content into the specified container
+      container.innerHTML = content;
+
+      // Load the associated script if provided
+      if (scriptUrl) {
+        const script = document.createElement("script");
+        script.src = scriptUrl;
+        container.appendChild(script);
+      }
     };
 
-    document.getElementById(containerId).appendChild(iframe);
+    // Append the iframe to the container
+    container.appendChild(iframe);
   }
 
-  injectContent("../navigation/navigation.html", "navigation-container");
-  injectContent("../profile/profile.html", "profile-container");
-});
+  // Inject Navigation component with associated script
+  injectContent("../navigation/navigation.html", "navigation-container", "../navigation/navigation.js");
 
-// Inject stylesheets - navigation, profile
+  // Inject Profile component with associated script
+  injectContent("../profile/profile.html", "profile-container", "../profile/profile.js");
+});
