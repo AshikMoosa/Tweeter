@@ -1,0 +1,45 @@
+body {
+  /* font-family: "Noto Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.navigation ul {
+  display: inline-flex;
+  column-gap: 3em;
+  padding: 0 1em;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  font-size: 14px;
+  padding: 1em;
+  transition: border-bottom-width 0.3s;
+  user-select: none;
+}
+
+.navigation ul li[selected] {
+  border-bottom: 3px solid rgba(47, 128, 237, 1);
+  border-radius: 2px;
+  transition-timing-function: ease;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: rgba(130, 130, 130, 1);
+  font-weight: 500;
+}
+
+.navigation ul li a:hover {
+  color: rgba(47, 128, 237, 1);
+}
+
+.navigation ul li[selected] a {
+  color: rgba(47, 128, 237, 1);
+  font-weight: 600;
+}
