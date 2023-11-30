@@ -1,15 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
-body {
-  font-family: "Noto Sans", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
-}
-
 .profile {
   display: flex;
   flex-direction: column;
   width: fit-content;
   align-items: end;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .profile .profile-info {
@@ -34,7 +28,8 @@ body {
 }
 
 .profile .profile-card {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: column;
 }
 
@@ -44,7 +39,7 @@ body {
   row-gap: 5px;
   list-style: none;
   padding: 12px;
-  /* height: 150px; */
+  margin-bottom: 0;
   width: 150px;
   border: 1px solid rgba(224, 224, 224, 1);
   border-radius: 12px;
