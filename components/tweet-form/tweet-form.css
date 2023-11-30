@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 0;
+  margin: 0;
+}
+
+.tweet-form {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1em;
+  border-radius: 12px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.tweet-form form {
+  margin: 0;
+}
+
+.tweet-form .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tweet-form .content {
+  display: flex;
+  column-gap: 1em;
+}
+
+.tweet-form .content .profile-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 8px;
+}
+
+.tweet-form .content .tweet-area {
+  border: 0;
+  width: 100%;
+}
+
+.tweet-form .content .tweet-area:focus-visible {
+  outline: none;
+}
+
+.tweet-form .content-controls {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  width: 100%;
+}
+
+.tweet-form .control-actions {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+
+.tweet-form .control-actions .left-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.tweet-form .control-actions .left-cta .upload-media,
+.tweet-form .control-actions .left-cta .reply-actions {
+  color: rgba(47, 128, 237, 1);
+  user-select: none;
+}
+
+.tweet-form .control-actions .left-cta .upload-media:hover {
+  cursor: pointer;
+}
+
+.tweet-form .control-actions .left-cta .reply-actions:hover {
+  cursor: pointer;
+}
+
+.tweet-form .control-actions .left-cta .title {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tweet-form .control-actions .reply-card {
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 3em;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 12px;
+  transition-timing-function: ease;
+  padding: 12px;
+}
+
+.tweet-form .reply-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.tweet-form .reply-card p {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.tweet-form .reply-card ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tweet-form .reply-card li {
+  display: inline-flex;
+  column-gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+.tweet-form .reply-card li:hover {
+  cursor: pointer;
+  background-color: rgb(242, 242, 242);
+}
+
+.tweet-form .control-actions button {
+  background-color: rgba(47, 128, 237, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: none;
+}
+
+.tweet-form .control-actions button:hover {
+  cursor: pointer;
+  background-color: rgba(47, 128, 237, 0.95);
+}
