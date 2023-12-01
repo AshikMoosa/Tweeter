@@ -34,7 +34,7 @@ body {
 
 .recommendations .recommendation-item hr {
   width: 100%;
-  margin: 0;
+  margin: 5px 0;
 }
 
 .recommendations .profile-info {
