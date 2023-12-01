@@ -1,0 +1,90 @@
+/twitter-clone
+|-- index.html
+|-- components
+|   |-- header
+|       |-- header.html
+|       |-- header.css
+|       |-- header.js
+|   |-- tweet-form
+|       |-- tweet-form.html
+|       |-- tweet-form.css
+|       |-- tweet-form.js
+|   |-- tweet-list
+|       |-- tweet-list.html
+|       |-- tweet-list.css
+|       |-- tweet-list.js
+|   |-- profile
+|       |-- profile.html
+|       |-- profile.css
+|       |-- profile.js
+|   |-- followers
+|       |-- followers.html
+|       |-- followers.css
+|       |-- followers.js
+|   |-- following
+|       |-- following.html
+|       |-- following.css
+|       |-- following.js
+|   |-- follow-button
+|       |-- follow-button.html
+|       |-- follow-button.css
+|       |-- follow-button.js
+|   |-- navigation
+|       |-- navigation.html
+|       |-- navigation.css
+|       |-- navigation.js
+|   |-- explore
+|       |-- explore.html
+|       |-- explore.css
+|       |-- explore.js
+|   |-- bookmarks
+|       |-- bookmarks.html
+|       |-- bookmarks.css
+|       |-- bookmarks.js
+|   |-- search
+|       |-- search.html
+|       |-- search.css
+|       |-- search.js
+|-- styles
+|   |-- main.css
+|-- scripts
+|   |-- main.js
+|-- images
+|   |-- (place your images here)
+
+Now, let's briefly describe the purpose of each component:
+
+Header:
+
+Displays the Twitter logo and navigation links.
+Tweet Form:
+
+Allows the user to post a new tweet, including uploading an image and setting the tweet visibility.
+Tweet List:
+
+Displays tweets based on various filters (Tweets, Tweets and Replies, Media, Likes).
+Profile:
+
+Shows user information and tweets/retweets.
+Followers:
+
+Displays the followers of a user.
+Following:
+
+Displays the users a user is following.
+Follow Button:
+
+Allows the user to follow or unfollow another user.
+Navigation:
+
+Handles navigation between Home, Explore, Bookmarks, and user-specific pages.
+Explore:
+
+Displays top, latest tweets, or tweets with media. Allows users to see popular people.
+Bookmarks:
+
+Shows saved tweets.
+Search:
+
+Optional component for searching for a group.
+Each component is responsible for specific user stories, making the project modular and organized. Depending on your preference and the complexity of each component, you may decide to further break down some components into subcomponents for better maintainability.

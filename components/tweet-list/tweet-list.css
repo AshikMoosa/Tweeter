@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 0;
+  margin: 0;
+}
+
+.tweet-list {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 1em 0;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.tweet-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tweet-list .tweet-list-item {
+  padding: 1em;
+  border-left: 3px solid transparent;
+  transition: border-left-color 0.5s;
+  user-select: none;
+}
+
+.tweet-list .tweet-list-item:hover {
+  cursor: pointer;
+  color: rgba(47, 128, 237, 1);
+}
+
+.tweet-list .tweet-list-item[selected] {
+  color: rgba(47, 128, 237, 1);
+  border-left: 3px solid rgba(47, 128, 237, 1);
+  border-radius: 2px;
+  transition-timing-function: ease;
+}
