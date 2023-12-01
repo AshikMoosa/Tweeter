@@ -29,6 +29,7 @@ body {
   display: inline-flex;
   flex-direction: column;
   padding: 0.5em 0;
+  width: 250px;
 }
 
 .recommendations .recommendation-item hr {
@@ -86,11 +87,11 @@ body {
 .recommendations .profile-description {
   font-size: 14px;
   color: rgba(130, 130, 130, 1);
-  width: 250px;
+  /* width: 250px; */
 }
 
 .recommendations .profile-cover {
   height: 100px;
-  width: 250px;
+  /* width: 250px; */
   border-radius: 8px;
 }
