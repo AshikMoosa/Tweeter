@@ -1,4 +1,4 @@
-.profile {
+.profile-menu {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -8,14 +8,14 @@
   position: relative;
 }
 
-.profile .profile-info {
+.profile-menu .profile-info {
   display: inline-flex;
   column-gap: 8px;
   align-items: center;
   transition: display 0.5s;
 }
 
-.profile .profile-info:hover {
+.profile-menu .profile-info:hover {
   cursor: pointer;
 }
 
@@ -30,7 +30,7 @@
   font-size: 12px;
 }
 
-.profile .profile-card {
+.profile-menu .profile-card {
   background-color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 3em;

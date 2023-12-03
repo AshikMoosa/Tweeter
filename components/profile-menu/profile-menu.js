@@ -1,4 +1,4 @@
-const profileElem = document.querySelector(".profile");
+const profileElem = document.querySelector(".profile-menu");
 const profileInfo = document.querySelector(".profile-info");
 const profileCard = document.querySelector(".profile-card");
 
