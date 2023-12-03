@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
   injectContent("../navigation/navigation.html", "navigation-container", "../navigation/navigation.js");
 
   // Inject Profile component with associated script
-  injectContent("../profile/profile.html", "profile-container", "../profile/profile.js");
+  injectContent("../profile/profile.html", "profile-container", "../profile/profile-menu.js");
 });
