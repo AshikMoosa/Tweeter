@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-.recommendations {
+.follow-modal {
   display: inline-flex;
   flex-direction: column;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
@@ -16,65 +16,87 @@ body {
   background-color: rgba(255, 255, 255, 1);
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
+  width: 500px;
 }
 
-.recommendations .title {
+.follow-modal .heading {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.follow-modal .title {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 600;
   margin: 0;
 }
 
-.recommendations .recommendation-item {
+.follow-modal .close-button {
+  border: 0;
+  background-color: transparent;
+}
+
+.follow-modal .close-button:hover {
+  cursor: pointer;
+}
+
+.follow-modal .close-button svg {
+  height: 24px;
+  width: 24px;
+  color: rgba(79, 79, 79, 1);
+}
+
+.follow-modal .follow-item {
   display: inline-flex;
   flex-direction: column;
   padding: 0.5em 0;
-  width: 300px;
 }
 
-.recommendations .recommendation-item hr {
+.follow-modal .follow-item hr {
   width: 100%;
   margin: 5px 0;
 }
 
-.recommendations .profile-info {
-  display: inline-flex;
+.follow-modal .profile-info {
+  display: flex;
   flex-direction: row;
   column-gap: 1em;
   align-items: center;
   justify-content: space-between;
 }
 
-.recommendations .profile-details {
+.follow-modal .profile-details {
   display: inline-flex;
   column-gap: 0.5em;
   align-items: center;
 }
 
-.recommendations .profile-info .profile-img {
+.follow-modal .profile-info .profile-img {
   height: 32px;
   width: 32px;
   border-radius: 8px;
 }
 
-.recommendations .profile-info p {
+.follow-modal .profile-info p {
   margin: 2px 0;
 }
 
-.recommendations .profile-info .name {
+.follow-modal .profile-info .name {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 
-.recommendations .profile-info .follower-count {
+.follow-modal .profile-info .follower-count {
   font-family: "Noto Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
   color: rgba(130, 130, 130, 1);
 }
 
-.recommendations .profile-info .follow-button {
+.follow-modal .profile-info .follow-button {
   font-family: "Noto Sans", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -85,24 +107,19 @@ body {
   border: 0;
 }
 
-.recommendations .profile-info .follow-button:hover {
+.follow-modal .profile-info .follow-button:hover {
   cursor: pointer;
   background-color: rgba(47, 128, 237, 0.95);
 }
 
-.recommendations .profile-info .follow-button svg {
+.follow-modal .profile-info .follow-button svg {
   padding-inline-start: 0.5em;
 }
 
-.recommendations .profile-description {
+.follow-modal .profile-description {
+  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   color: rgba(130, 130, 130, 1);
   overflow-wrap: break-word;
   /* width: 250px; */
-}
-
-.recommendations .profile-cover {
-  height: 100px;
-  /* width: 250px; */
-  border-radius: 8px;
 }
