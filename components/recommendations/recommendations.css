@@ -75,6 +75,9 @@ body {
 }
 
 .recommendations .profile-info .follow-button {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
   padding: 0.5em 1em;
   background-color: rgba(47, 128, 237, 1);
   color: rgba(255, 255, 255, 1);
