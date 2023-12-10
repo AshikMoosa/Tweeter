@@ -1,3 +1,4 @@
+"use strict";
 // Inject HTML Pages & scripts - navigation, profile
 document.addEventListener("DOMContentLoaded", function () {
   function injectContent(url, containerId, scriptUrl) {

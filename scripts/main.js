@@ -1,3 +1,4 @@
+"use strict";
 // Inject HTML Pages & scripts - navigation, profile
 document.addEventListener("DOMContentLoaded", function () {
   function injectContent(url, containerId, scriptUrl) {
@@ -30,6 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Header - Inject Header component with associated script
   injectContent("/components/header/header.html", "tweeter-header-container", "/components/header/header.js");
 
-  // Aside - Inject Trends component with associated script
-  // injectContent("/components/trends/trends.html", "trends-container", "/components/trends/trends.js");
+  // HomePage - Inject Home component with associated script
+  injectContent("/pages/home/home.html", "home-page-container", "/pages/home/home.js");
 });

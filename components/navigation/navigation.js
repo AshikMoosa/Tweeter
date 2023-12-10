@@ -1,3 +1,4 @@
+"use strict";
 const navContainer = document.querySelector(".navigation");
 const navList = navContainer.querySelectorAll("li");
 const navItem = navContainer.querySelectorAll("a");

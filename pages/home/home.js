@@ -1,3 +1,4 @@
+"use strict";
 // Inject HTML Pages & scripts - navigation, profile
 document.addEventListener("DOMContentLoaded", function () {
   function injectContent(url, containerId, scriptUrl) {
@@ -29,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Main - Inject Tweet-Form component with associated script
   injectContent("/components/tweet-form/tweet-form.html", "tweet-form-container", "/components/tweet-form/tweet-form.js");
-  injectContent("/components/tweet-card/tweet-card.html", "tweet-card-container", "/components/tweet-card/tweet-card.js");
+  injectContent("/components/tweet-card/tweet-card.html", "tweet-card-container", "");
 
   // Aside - Inject Trends component with associated script
   injectContent("/components/trends/trends.html", "trends-container", "/components/trends/trends.js");
-  injectContent("/components/recommendations/recommendations.html", "recommendations-container", "/components/recommendations/recommendations.js");
+  injectContent("/components/recommendations/recommendations.html", "recommendations-container", "");
 });
