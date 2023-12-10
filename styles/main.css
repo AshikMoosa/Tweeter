@@ -1,7 +1,6 @@
 body {
   font-family: "Noto Sans", sans-serif;
   /* font-family: "Poppins", sans-serif; */
-
   margin: 0;
 }
 
@@ -15,7 +14,11 @@ main .content {
   flex: 1;
 }
 
-footer {
+main #home-page-container {
+  padding: 2em;
+}
+
+/* footer {
   padding: 1em;
   background-color: lightgreen;
-}
+} */

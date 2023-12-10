@@ -33,4 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // HomePage - Inject Home component with associated script
   injectContent("/pages/home/home.html", "home-page-container", "/pages/home/home.js");
+
+  // Footer - Inject Footer component with associated script
+  injectContent("/components/footer/footer.html", "tweeter-footer-container", "");
 });

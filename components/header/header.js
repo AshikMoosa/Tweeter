@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Inject Navigation component with associated script
-  injectContent("../navigation/navigation.html", "navigation-container", "../navigation/navigation.js");
+  injectContent("/components/navigation/navigation.html", "navigation-container", "/components/navigation/navigation.js");
 
   // Inject Profile component with associated script
-  injectContent("../profile-menu/profile-menu.html", "profile-container", "../profile-menu/profile-menu.js");
+  injectContent("/components/profile-menu/profile-menu.html", "profile-container", "/components/profile-menu/profile-menu.js");
 });
