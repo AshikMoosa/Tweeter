@@ -8,7 +8,7 @@ body {
 }
 
 .tweet-card {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
   padding: 1em;
@@ -16,7 +16,7 @@ body {
   background-color: rgba(255, 255, 255, 1);
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
-  width: 600px;
+  /* width: 600px; */
 }
 
 .tweet-card .profile-info {

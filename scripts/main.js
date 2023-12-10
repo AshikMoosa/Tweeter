@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     container.appendChild(iframe);
   }
 
-  // Inject Navigation component with associated script
-  injectContent("../navigation/navigation.html", "navigation-container", "../navigation/navigation.js");
+  // Header - Inject Header component with associated script
+  injectContent("/components/header/header.html", "tweeter-header-container", "/components/header/header.js");
 
-  // Inject Profile component with associated script
-  injectContent("../profile-menu/profile-menu.html", "profile-container", "../profile-menu/profile-menu.js");
+  // Aside - Inject Trends component with associated script
+  // injectContent("/components/trends/trends.html", "trends-container", "/components/trends/trends.js");
 });

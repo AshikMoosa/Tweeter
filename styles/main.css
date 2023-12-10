@@ -1,4 +1,21 @@
 body {
   font-family: "Noto Sans", sans-serif;
   /* font-family: "Poppins", sans-serif; */
+
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main .content {
+  flex: 1;
+}
+
+footer {
+  padding: 1em;
+  background-color: lightgreen;
 }
