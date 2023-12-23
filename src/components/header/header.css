@@ -16,3 +16,123 @@ body {
   background-color: lightcoral;
   padding: 0 1em;
 }
+
+/* Navigation Styles */
+.navigation {
+  display: inline-flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation ul {
+  display: inline-flex;
+  column-gap: 3em;
+  padding: 0 1em;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  font-size: 14px;
+  padding: 1.5em;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.5s;
+  user-select: none;
+}
+
+.navigation ul li[selected] {
+  border-bottom: 3px solid rgba(47, 128, 237, 1);
+  border-radius: 2px;
+  transition-timing-function: ease;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: rgba(130, 130, 130, 1);
+  font-weight: 500;
+}
+
+.navigation ul li a:hover {
+  color: rgba(47, 128, 237, 1);
+}
+
+.navigation ul li[selected] a {
+  color: rgba(47, 128, 237, 1);
+  font-weight: 600;
+}
+
+/* Profile-Menu Styles */
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: end;
+  font-family: "Noto Sans", sans-serif;
+  user-select: none;
+  position: relative;
+}
+
+.profile-menu .profile-info {
+  display: inline-flex;
+  column-gap: 8px;
+  align-items: center;
+  transition: display 0.5s;
+}
+
+.profile-menu .profile-info:hover {
+  cursor: pointer;
+}
+
+.profile-info .profile-img {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+}
+
+.profile-info .profile-name {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.profile-menu .profile-card {
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 3em;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 12px;
+  transition-timing-function: ease;
+}
+
+.profile-card ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  list-style: none;
+  padding: 12px;
+  margin: 0;
+  width: 150px;
+}
+
+.profile-card ul hr {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(224, 224, 224, 1);
+}
+
+.profile-card ul li {
+  display: inline-flex;
+  column-gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.profile-card ul li:hover {
+  cursor: pointer;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.profile-card .icon svg {
+  width: 16px;
+  height: 16px;
+}
