@@ -5,4 +5,11 @@ body {
   background: rgba(242, 242, 242, 1);
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
