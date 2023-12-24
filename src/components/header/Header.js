@@ -9,9 +9,9 @@ const renderHeader = `
   <!-- Navigation -->
   <nav class="navigation">
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/explore">Explore</a></li>
-      <li><a href="/bookmarks">Bookmarks</a></li>
+      <li><a href="/" class="navigation-link">Home</a></li>
+      <li><a href="explore" class="navigation-link">Explore</a></li>
+      <li><a href="bookmarks" class="navigation-link">Bookmarks</a></li>
     </ul>
   </nav>
 

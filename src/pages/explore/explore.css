@@ -40,6 +40,8 @@
 }
 
 .search .controls {
+  display: flex;
+  column-gap: 0.5em;
   flex: auto;
 }
 

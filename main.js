@@ -9,4 +9,46 @@ headerContainer.innerHTML = renderHeader;
 const footerContainer = document.getElementById("footer-container");
 footerContainer.innerHTML = renderFooter;
 const contentContainer = document.getElementById("content-container");
-contentContainer.innerHTML = renderBookmarksPage;
+// contentContainer.innerHTML = renderHomePage;
+
+const navigationLinks = document.querySelectorAll(".navigation-link");
+
+// Handle navigation link clicks
+navigationLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default page reload
+    const selectedPage = link.getAttribute("href");
+    updateURLAndRenderComponent(selectedPage);
+  });
+});
+
+// Handle back/forward button clicks
+window.addEventListener("popstate", (event) => {
+  const currentPage = window.location.pathname;
+  renderComponent(currentPage);
+});
+
+// Render initial component based on URL - homepage
+const currentPage = window.location.pathname;
+renderComponent(currentPage);
+
+function renderComponent(componentName) {
+  switch (componentName) {
+    case "/":
+      contentContainer.innerHTML = renderHomePage;
+      break;
+    case "explore":
+      contentContainer.innerHTML = renderExplorePage;
+      break;
+    case "bookmarks":
+      contentContainer.innerHTML = renderBookmarksPage;
+      break;
+    default:
+    // Handle invalid routes (e.g., display a 404 page)
+  }
+}
+
+function updateURLAndRenderComponent(pageName) {
+  window.history.pushState({}, "", pageName);
+  renderComponent(pageName);
+}
