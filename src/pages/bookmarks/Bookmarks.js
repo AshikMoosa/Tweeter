@@ -1,0 +1,84 @@
+const renderBookmarksPage = `
+<section class="bookmarks-page">
+  <aside class="sidebar">
+    <div class="tweet-list-container">
+      <div class="tweet-list">
+        <ul>
+          <li class="tweet-list-item" selected>Tweets</li>
+          <li class="tweet-list-item">Tweets & replies</li>
+          <li class="tweet-list-item">Media</li>
+          <li class="tweet-list-item">Likes</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+  <section class="main">
+    <div id="tweet-card-container">
+
+      <div class="tweet-card">
+        <div class="profile-info">
+          <img src="/src/assets/profile1.jpg" alt="profile-img" class="profile-img">
+          <div class="profile-details">
+            <span class="name">Cristina Neal</span>
+            <span class="time-stamp">24 August at 20:43</span>
+          </div>
+        </div>
+
+
+        <div class="tweet-cover-info">
+          <p class="tweet-description">“We travel, some of us forever, to seek other places, other lives, other souls.”
+            –
+            Anais Nin</p>
+          <img src="/src/assets/profile-cover.jpg" alt="cover-img" class="cover-img">
+          <div class="cover-details">
+            <span class="comments-count">449 Comments</span>
+            <span class="retweets-count">59k Retweets</span>
+            <span class="saved-count">234 Saved</span>
+          </div>
+          <div class="cover-controls">
+            <button class="comment"><i class="fa-regular fa-message fa-flip-horizontal"></i>Comment</button>
+            <button class="retweet"><i class="fa-solid fa-retweet"></i>Retweet</button>
+            <button class="like"><i class="fa-regular fa-heart"></i>Like</button>
+            <button class="save"><i class="fa-regular fa-bookmark"></i>Save</button>
+          </div>
+        </div>
+
+        <div class="tweet-reply-container">
+          <div class="tweet-reply-form">
+            <img src="/src/assets/profile1.jpg" alt="profile-img" class="profile-img">
+            <div class="tweet-reply-control-container">
+              <input type="text" placeholder="Tweet your reply" class="tweet-reply-input" name="tweet-reply-control"
+                id="tweet-reply-control">
+              <button class="upload-media" id="uploadMedia"><i class="fa-regular fa-image"></i></button>
+              <input type="file" id="fileInput" style="display:none">
+            </div>
+          </div>
+
+          <div class="tweet-reply-item">
+            <img src="/src/assets/profile1.jpg" alt="profile-img" class="profile-img">
+            <div class="reply-content">
+              <div class="reply-profile-info">
+                <span class="name">Cristina Neal</span>
+                <span class="time-stamp">24 August at 20:43</span>
+              </div>
+              <div class="reply-msg">
+                <p class="reply-msg-description">I’ve seen awe-inspiring things that I thought I’d never be able to
+                  explain
+                  to another person.</p>
+                <img src="/src/assets/profile-cover.jpg" alt="reply-cover" class="reply-msg-cover">
+              </div>
+              <div class="reply-controls">
+                <button class="like"><i class="fa-regular fa-heart"></i>Like</button>
+                <span class="likes-count">12k Likes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
+export default renderBookmarksPage;
