@@ -13,3 +13,7 @@ body {
 main {
   flex: 1;
 }
+
+main #content-container {
+  padding: 2em 0;
+}

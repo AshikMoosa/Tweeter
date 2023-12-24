@@ -1,15 +1,17 @@
 const renderHeader = `
 <section class="header">
   <div class="logo">
-    <img src="/src/assets/tweeter.svg" alt="tweeter-logo">
+    <a href="/">
+      <img src="/src/assets/tweeter.svg" alt="tweeter-logo">
+    </a>
   </div>
 
   <!-- Navigation -->
   <nav class="navigation">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Explore</a></li>
-      <li><a href="#">Bookmarks</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/explore">Explore</a></li>
+      <li><a href="/bookmarks">Bookmarks</a></li>
     </ul>
   </nav>
 
