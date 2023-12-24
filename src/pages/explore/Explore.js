@@ -1,0 +1,95 @@
+const renderExplorePage = `
+<section class="explore-page">
+  <aside class="sidebar">
+    <div class="explore-list-container">
+      <div class="explore-list">
+        <ul>
+          <li class="explore-list-item" selected>Top</li>
+          <li class="explore-list-item">Latest</li>
+          <li class="explore-list-item">People</li>
+          <li class="explore-list-item">Media</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+  <section class="main">
+    <div class="search-container">
+      <div class="search">
+        <div class="controls">
+          <label for="search-person">
+            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </label>
+          <input type="text" placeholder="Search" class="search-control" name="search" id="search-person">
+        </div>
+        <button type="button" class="search-button">Search</button>
+      </div>
+    </div>
+    <div id="tweet-card-container">
+
+      <div class="tweet-card">
+        <div class="profile-info">
+          <img src="/src/assets/profile1.jpg" alt="profile-img" class="profile-img">
+          <div class="profile-details">
+            <span class="name">Cristina Neal</span>
+            <span class="time-stamp">24 August at 20:43</span>
+          </div>
+        </div>
+
+
+        <div class="tweet-cover-info">
+          <p class="tweet-description">“We travel, some of us forever, to seek other places, other lives, other souls.”
+            –
+            Anais Nin</p>
+          <img src="/src/assets/profile-cover.jpg" alt="cover-img" class="cover-img">
+          <div class="cover-details">
+            <span class="comments-count">449 Comments</span>
+            <span class="retweets-count">59k Retweets</span>
+            <span class="saved-count">234 Saved</span>
+          </div>
+          <div class="cover-controls">
+            <button class="comment"><i class="fa-regular fa-message fa-flip-horizontal"></i>Comment</button>
+            <button class="retweet"><i class="fa-solid fa-retweet"></i>Retweet</button>
+            <button class="like"><i class="fa-regular fa-heart"></i>Like</button>
+            <button class="save"><i class="fa-regular fa-bookmark"></i>Save</button>
+          </div>
+        </div>
+
+        <div class="tweet-reply-container">
+          <div class="tweet-reply-form">
+            <img src="/src/assets/profile1.jpg" alt="profile-img" class="profile-img">
+            <div class="tweet-reply-control-container">
+              <input type="text" placeholder="Tweet your reply" class="tweet-reply-input" name="tweet-reply-control"
+                id="tweet-reply-control">
+              <button class="upload-media" id="uploadMedia"><i class="fa-regular fa-image"></i></button>
+              <input type="file" id="fileInput" style="display:none">
+            </div>
+          </div>
+
+          <div class="tweet-reply-item">
+            <img src="/src/assets/profile1.jpg" alt="profile-img" class="profile-img">
+            <div class="reply-content">
+              <div class="reply-profile-info">
+                <span class="name">Cristina Neal</span>
+                <span class="time-stamp">24 August at 20:43</span>
+              </div>
+              <div class="reply-msg">
+                <p class="reply-msg-description">I’ve seen awe-inspiring things that I thought I’d never be able to
+                  explain
+                  to another person.</p>
+                <img src="/src/assets/profile-cover.jpg" alt="reply-cover" class="reply-msg-cover">
+              </div>
+              <div class="reply-controls">
+                <button class="like"><i class="fa-regular fa-heart"></i>Like</button>
+                <span class="likes-count">12k Likes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+`;
+
+export default renderExplorePage;

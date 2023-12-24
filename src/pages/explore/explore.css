@@ -1,3 +1,32 @@
+.explore-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 1em;
+  margin: 0 10%;
+}
+
+.explore-page .main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  flex: 100%;
+}
+
+.explore-page .main .tweet-card-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.explore-page .sidebar {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  flex: auto;
+}
+
+/* Search Styles */
 .search {
   display: flex;
   align-items: center;
