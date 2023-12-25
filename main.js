@@ -10,6 +10,8 @@ const footerContainer = document.getElementById("footer-container");
 footerContainer.innerHTML = renderFooter;
 const contentContainer = document.getElementById("content-container");
 
+const navigationContainer = document.querySelector(".navigation");
+const navigationLists = document.querySelectorAll(".navigation-list");
 const navigationLinks = document.querySelectorAll(".navigation-link");
 
 // Handle navigation link clicks
@@ -18,6 +20,14 @@ navigationLinks.forEach((link) => {
     event.preventDefault(); // Prevent default page reload
     const selectedPage = link.getAttribute("href");
     updateURLAndRenderComponent(selectedPage);
+
+    // handle navigation selection links
+    navigationLists.forEach((listItem) => {
+      listItem.removeAttribute("selected");
+    });
+
+    // setting selected attribute to respective navigation-list
+    event.target.parentElement.setAttribute("selected", true);
   });
 });
 
