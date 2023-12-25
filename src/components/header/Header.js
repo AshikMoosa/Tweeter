@@ -29,20 +29,20 @@ const renderHeader = `
       <ul>
         <li>
           <span class="icon"><i class="fa-solid fa-circle-user"></i></span>
-          <span class="title">My Profile</span>
+          <span class="my-profile"><a href="profile" class="navigation-link">My Profile</a></span>
         </li>
         <li>
           <span class="icon"><i class="fa-solid fa-user-group"></i></span>
-          <span class="title">Group Chat</span>
+          <span class="group-chat">Group Chat</span>
         </li>
         <li>
           <span class="icon"><i class="fa-solid fa-gear"></i></span>
-          <span class="title">Settings</span>
+          <span class="settings">Settings</span>
         </li>
         <hr>
         <li>
           <span class="icon"><i class="fa-solid fa-arrow-right-to-bracket"></i></span>
-          <span class="title">Logout</span>
+          <span class="logout">Logout</span>
         </li>
       </ul>
     </div>

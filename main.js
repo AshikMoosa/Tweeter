@@ -3,6 +3,7 @@ import renderFooter from "/src/components/footer/Footer.js";
 import renderHomePage from "/src/pages/home/Home.js";
 import renderExplorePage from "/src/pages/explore/Explore.js";
 import renderBookmarksPage from "/src/pages/bookmarks/Bookmarks.js";
+import renderProfilePagePage from "/src/pages/profile/Profile.js";
 
 const headerContainer = document.getElementById("header-container");
 const footerContainer = document.getElementById("footer-container");
@@ -57,6 +58,9 @@ function renderComponent(componentName) {
       break;
     case "bookmarks":
       contentContainer.innerHTML = renderBookmarksPage;
+      break;
+    case "profile":
+      contentContainer.innerHTML = renderProfilePagePage;
       break;
     default:
     // Handle invalid routes (e.g., display a 404 page)
