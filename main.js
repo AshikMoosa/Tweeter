@@ -7,13 +7,17 @@ import renderBookmarksPage from "/src/pages/bookmarks/Bookmarks.js";
 const headerContainer = document.getElementById("header-container");
 const footerContainer = document.getElementById("footer-container");
 const contentContainer = document.getElementById("content-container");
-const navigationContainer = document.querySelector(".navigation");
-const navigationLists = document.querySelectorAll(".navigation-list");
-const navigationLinks = document.querySelectorAll(".navigation-link");
 
 // Render Header & Footer Always
 headerContainer.innerHTML = renderHeader;
 footerContainer.innerHTML = renderFooter;
+
+const navigationContainer = document.querySelector(".navigation");
+const navigationLists = document.querySelectorAll(".navigation-list");
+const navigationLinks = document.querySelectorAll(".navigation-link");
+const profileElem = document.querySelector(".profile-menu");
+const profileInfo = document.querySelector(".profile-info");
+const profileCard = document.querySelector(".profile-card");
 
 // Handle navigation link clicks
 navigationLinks.forEach((link) => {
@@ -63,3 +67,22 @@ function updateURLAndRenderComponent(pageName) {
   window.history.pushState({}, "", pageName);
   renderComponent(pageName);
 }
+
+// Handle Profile Menu Dropdown
+// Toggle the card visibility
+function toggleCard() {
+  profileCard.hidden = profileCard.hidden === true ? false : true;
+}
+
+// Show profile-card when profile-info is clicked
+profileInfo.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleCard();
+});
+
+// Hide profile-card when user clicks outside
+document.addEventListener("click", function (event) {
+  if (!profileCard.contains(event.target) && event.target !== profileInfo) {
+    profileCard.hidden = true;
+  }
+});
