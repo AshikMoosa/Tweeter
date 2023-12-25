@@ -5,14 +5,15 @@ import renderExplorePage from "/src/pages/explore/Explore.js";
 import renderBookmarksPage from "/src/pages/bookmarks/Bookmarks.js";
 
 const headerContainer = document.getElementById("header-container");
-headerContainer.innerHTML = renderHeader;
 const footerContainer = document.getElementById("footer-container");
-footerContainer.innerHTML = renderFooter;
 const contentContainer = document.getElementById("content-container");
-
 const navigationContainer = document.querySelector(".navigation");
 const navigationLists = document.querySelectorAll(".navigation-list");
 const navigationLinks = document.querySelectorAll(".navigation-link");
+
+// Render Header & Footer Always
+headerContainer.innerHTML = renderHeader;
+footerContainer.innerHTML = renderFooter;
 
 // Handle navigation link clicks
 navigationLinks.forEach((link) => {
