@@ -9,7 +9,6 @@ headerContainer.innerHTML = renderHeader;
 const footerContainer = document.getElementById("footer-container");
 footerContainer.innerHTML = renderFooter;
 const contentContainer = document.getElementById("content-container");
-// contentContainer.innerHTML = renderHomePage;
 
 const navigationLinks = document.querySelectorAll(".navigation-link");
 
@@ -34,6 +33,7 @@ renderComponent(currentPage);
 
 function renderComponent(componentName) {
   switch (componentName) {
+    case "/index.html":
     case "/":
       contentContainer.innerHTML = renderHomePage;
       break;
