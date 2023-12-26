@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
-body {
-  font-family: "Noto Sans", sans-serif;
-  background-color: rgba(242, 242, 242, 1);
-  padding: 0;
-  margin: 0;
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1em;
+  /* margin: 0 10%; */
 }
+
+.profile-page .main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  flex: 100%;
+}
+
+.profile-page .cover-image img {
+  height: 350px;
+  width: 100%;
+}
+
+/* User-Profile Styles */
 
 .user-profile {
   display: inline-flex;
